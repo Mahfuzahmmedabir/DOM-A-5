@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <!-- daisy ui and tailwindcss link -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    .bg-color {
+      background-color: rgb(249, 247, 243);
+      ;
+    }
+
+    .bg-btn {
+      background-color: rgb(180, 244, 97);
+    }
+  </style>
+</head>
+
+<body>
+  <!-- header section start -->
+  <header>
+    <nav class="bg-color h-24 ">
+      <div class="navbar  w-11/12 mx-auto">
+        <!-- navbar start -->
+        <div class="navbar-start">
+          <button class="bg-btn px-8 py-3 rounded-xl font-semibold">Blog</button>
+        </div>
+        <!-- navbar center -->
+        <div class="navbar-center">
+          <div class="flex justify-center items-center">
+            <img src="assets/logo.png" alt="">
+            <h2 class="font-semibold text-2xl px-4">Donate Bangladesh</h2>
+          </div>
+        </div>
+        <!-- navbar end -->
+        <div class="navbar-end">
+          <div class="flex justify-center items-center">
+            <img src="assets/coin.png" alt="">
+            <button class="font-semibold  px-4"> BDT 5500</button>
+          </div>
+        </div>
+      </div>
+      <!-- Donation and History button -->
+      <div class="text-center mt-16">
+        <button class="mx-4 bg-btn font-bold border-2 px-8 py-4 rounded-lg">Donation</button>
+        <button class=" font-bold text-gray-600 border-2 px-8 py-4 rounded-lg">History</button>
+      </div>
+    </nav>
+  </header>
+  <!-- header section end -->
+  <main class="mt-40">
+
+    <!-- main  content section start -->
+    <!-- card 1 -->
+    <div class="hero border-2 rounded-2xl mb-10 w-10/12 mx-auto mt-20">
+      <div class="hero-content flex-col lg:flex-row">
+        <img src="assets/noakhali.png" class=" rounded-lg shadow-2xl" />
+        <!-- Mony and icon -->
+        <div>
+          <div class="btn mb-3">
+            <img src="assets/coin.png" alt="">
+            <p id="get-balance" class="text-xl "> 0 </p><span class="text-xl">BDT</span>
+          </div>
+          <!-- text fild -->
+          <div>
+            <h1 class="text-2xl font-bold">Donate for Flood at Noakhali, Bangladesh</h1>
+            <p class="py-6 text-gray-500">
+              The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+              help provide
+              essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+              difference. Please
+              join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+          </div>
+          <!-- input fild -->
+          <div>
+            <input id="Noakhali-input" type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
+              placeholder="Write Donation Amount">
+            <button id="Noakhali" class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- card 2 -->
+    <div class="hero border-2 rounded-2xl mb-10 w-10/12 mx-auto mt-10">
+      <div class="hero-content flex-col  lg:flex-row">
+        <img src="assets/feni.png " class="  rounded-lg shadow-2xl" />
+        <!-- Money and icon  -->
+        <div>
+          <div class="btn mb-3">
+            <img src="assets/coin.png" alt="">
+            <p class="text-xl mx-2"> 600 BDT</p>
+          </div>
+          <!-- text fild -->
+          <div>
+            <h1 class="text-2xl font-bold">Donate for Flood Relief in Feni,Bangladesh</h1>
+            <p class="py-6 text-gray-500">
+              The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+              help provide
+              essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+              difference. Please
+              join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+          </div>
+          <!-- input fild -->
+          <div>
+            <input type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
+              placeholder="Write Donation Amount">
+            <button class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+    <!-- card 3 -->
+    <div class="hero border-2 rounded-2xl mb-10 w-10/12 mx-auto mt-10">
+      <div class="hero-content flex-col lg:flex-row mx-10">
+        <img src="assets/quota-protest.png" class=" rounded-lg shadow-2xl" />
+        <!-- money and icon -->
+        <div>
+          <div class="btn mb-3">
+            <img src="assets/coin.png" alt="">
+            <p class="text-xl mx-2"> 2400 BDT</p>
+          </div>
+          <!-- text fild -->
+          <div>
+            <h1 class="text-2xl font-bold">Aid for Injured in the Quota Movement</h1>
+            <p class="py-6 text-gray-500">
+              The recent floods in Noakhali have caused significant damage to homes infrastructure. Your donation will
+              help provide
+              essential supplies and to those affected by this disaster. Every contribution, big or small, makes
+              difference. Please
+              join us in supporting the relief efforts and making a positive impact on the lives of those in need.
+            </p>
+          </div>
+          <!-- input fild -->
+          <div>
+            <input type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
+              placeholder="Write Donation Amount">
+            <button class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- main donation section end -->
+  </main>
+  <script src="utilities.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
