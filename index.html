@@ -22,8 +22,9 @@
 
 <body>
   <!-- header section start -->
-  <header>
-    <nav class="bg-color h-24 ">
+  <header class="sticky top-0 z-10  ">
+    <nav class=" h-24 bg-color  ">
+
       <div class="navbar  w-11/12 mx-auto">
         <!-- navbar start -->
         <div class="navbar-start">
@@ -40,20 +41,23 @@
         <div class="navbar-end">
           <div class="flex justify-center items-center">
             <img src="assets/coin.png" alt="">
-            <button id="current-balance" class="font-semibold  px-4"> 5500 </button> <span class="text-xl font-bold">BDT</span>
+            <button id="cash-balance" class="font-semibold  px-4"> 5500 </button> <span
+              class="text-xl font-bold">BDT</span>
           </div>
         </div>
       </div>
       <!-- Donation and History button -->
-      <div class="text-center mt-16">
+      <div class="text-center pt-10 pb-10 bg-white  ">
         <button class="mx-4 bg-btn font-bold border-2 px-8 py-4 rounded-lg">Donation</button>
-        <button class=" font-bold text-gray-600 border-2 px-8 py-4 rounded-lg">History</button>
+        <button id="history-btn" class=" font-bold text-gray-600 border-2 px-8 py-4 rounded-lg">History</button>
+        <div id="donate-histoy">
+        </div>
       </div>
+
     </nav>
   </header>
   <!-- header section end -->
   <main class="mt-40">
-
     <!-- main  content section start -->
     <!-- card 1 -->
     <div class="hero border-2 rounded-2xl mb-10 w-10/12 mx-auto mt-20">
@@ -93,7 +97,8 @@
         <div>
           <div class="btn mb-3">
             <img src="assets/coin.png" alt="">
-            <p class="text-xl mx-2"> 600 BDT</p>
+            <p id="get-balance-feni" class="text-xl mx-2"> 600 </p>
+            <span class="text-xl">BDT</span>
           </div>
           <!-- text fild -->
           <div>
@@ -108,11 +113,10 @@
           </div>
           <!-- input fild -->
           <div>
-            <input type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
+            <input id="feni-input" type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
               placeholder="Write Donation Amount">
-            <button class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
+            <button id="feni-btn" class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
           </div>
-
         </div>
       </div>
     </div>
@@ -124,7 +128,7 @@
         <div>
           <div class="btn mb-3">
             <img src="assets/coin.png" alt="">
-            <p class="text-xl mx-2"> 2400 BDT</p>
+            <p id="quota-balance" class="text-xl mx-2"> 2400 </p><span class="text-xl">BDT</span>
           </div>
           <!-- text fild -->
           <div>
@@ -139,9 +143,9 @@
           </div>
           <!-- input fild -->
           <div>
-            <input type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
+            <input id="quota-input" type="text" class="text-left border-2 px-8 py-4 rounded-lg  w-full"
               placeholder="Write Donation Amount">
-            <button class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
+            <button id="quota-btn" class="btn mt-4 bg-btn w-full font-bold text-xl">Donate Now</button>
           </div>
         </div>
       </div>
