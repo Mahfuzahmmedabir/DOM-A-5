@@ -1,3 +1,12 @@
+document.getElementById('blog-page').addEventListener('click', function () {
+  window.location.href = '/blog.html'
+});
+
+
+
+
+
+
 // Noakhali part
 document.getElementById('btn-Noakhali').addEventListener('click', function () {
   const cash = getCurrentNumber('cash-balance');
@@ -11,7 +20,7 @@ document.getElementById('btn-Noakhali').addEventListener('click', function () {
   const addedNumber = getInput + donationNumber1;
   document.getElementById('cash-balance').innerText = decreaseNumber;
   document.getElementById('get-balance').innerText = addedNumber;
-  
+
 });
 // feni part
 document.getElementById('feni-btn').addEventListener('click', function () {
@@ -65,11 +74,10 @@ document.getElementById('history-btn').addEventListener('click', function () {
   div.innerHTML = `
   <div class="p-4">
   <h1 class ="text-left font-bold text-xl">${donationNumber1} Taka is Donated for famine-2024 at Feni, Bangladesh   </h1>
-  <p class ="text-left text-gray-600 mt-4">Date: ${new Date()}(Date:(Bangladesh Standard Time)  </p>
+  <p class ="text-left text-gray-600 mt-4">Date: ${new Date()}(Bangladesh Standard Time)  </p>
   </div>
   `;
   // 2
-
   const div2 = document.createElement('div');
   div2.classList.add(
     'border-2',
@@ -82,7 +90,7 @@ document.getElementById('history-btn').addEventListener('click', function () {
   div2.innerHTML = `
   <div class="p-4">
   <h1 class ="text-left font-bold text-xl"> ${donationNumber2} Taka is Donated for Flood Relief in Feni,Bangladesh   </h1>
-  <p class ="text-left text-gray-600 mt-4">Date: ${new Date()}(Date:(Bangladesh Standard Time)  </p>
+  <p class ="text-left text-gray-600 mt-4">Date: ${new Date()}(Bangladesh Standard Time)  </p>
   </div>
   `;
   const div3 = document.createElement('div');
@@ -98,14 +106,13 @@ document.getElementById('history-btn').addEventListener('click', function () {
   div3.innerHTML = `
   <div class="p-4">
   <h1 class ="text-left font-bold text-xl">${donationNumber3} Taka is Donated for Aid for Injured in the Quota Movement, Bangladesh   </h1>
-  <p class ="text-left text-gray-600 mt-4 ">Date: ${new Date()}(Date:(Bangladesh Standard Time)</p>
+  <p class ="text-left text-gray-600 mt-4 ">Date: ${new Date()}(Bangladesh Standard Time)</p>
   </div>
   `;
   document.getElementById('donate-histoy').append(div);
   document.getElementById('donate-histoy').append(div2);
   document.getElementById('donate-histoy').append(div3);
 });
-
 document.getElementById('donation').addEventListener('click', function () {
   document.getElementById('donation').classList.add('bg-btn');
   document.getElementById('history-btn').classList.remove('bg-btn');
