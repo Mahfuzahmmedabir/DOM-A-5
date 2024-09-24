@@ -13,7 +13,6 @@
       background-color: rgb(249, 247, 243);
       ;
     }
-
     .bg-btn {
       background-color: rgb(180, 244, 97);
     }
@@ -21,6 +20,21 @@
 </head>
 
 <body>
+
+  <!-- The button to open modal -->
+  <label for="my_modal_6" id="open" class="btn">open modal</label>
+  
+  <!-- Put this part before </body> tag -->
+  <input type="checkbox" id="my_modal_6" class="modal-toggle" />
+  <div class="modal" role="dialog">
+    <div class="modal-box">
+      <h3 class="text-lg font-bold">Hello!</h3>
+      <p class="py-4">This modal works with a hidden checkbox!</p>
+      <div class="modal-action">
+        <label for="my_modal_6" class="btn">Close!</label>
+      </div>
+    </div>
+  </div>
   <!-- header section start -->
   <header class="sticky top-0 z-10  ">
     <nav class=" h-24 bg-color   ">

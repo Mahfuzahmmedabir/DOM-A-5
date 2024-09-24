@@ -3,10 +3,6 @@ document.getElementById('blog-page').addEventListener('click', function () {
 });
 
 
-
-
-
-
 // Noakhali part
 document.getElementById('btn-Noakhali').addEventListener('click', function () {
   const cash = getCurrentNumber('cash-balance');
@@ -15,7 +11,10 @@ document.getElementById('btn-Noakhali').addEventListener('click', function () {
   if (isNaN(getInput) || getInput <= 0 || getInput > cash) {
     alert('Opps something worng');
     return alert;
+  } else {
+   
   }
+   document.getElementById('open');
   const decreaseNumber = cash - getInput;
   const addedNumber = getInput + donationNumber1;
   document.getElementById('cash-balance').innerText = decreaseNumber;
