@@ -1,8 +1,6 @@
 document.getElementById('blog-page').addEventListener('click', function () {
   window.location.href = './blog.html'
 });
-
-
 // Noakhali part
 document.getElementById('btn-Noakhali').addEventListener('click', function () {
   const cash = getCurrentNumber('cash-balance');
@@ -14,11 +12,12 @@ document.getElementById('btn-Noakhali').addEventListener('click', function () {
   } else {
    
   }
-   document.getElementById('open');
+  
   const decreaseNumber = cash - getInput;
   const addedNumber = getInput + donationNumber1;
   document.getElementById('cash-balance').innerText = decreaseNumber;
   document.getElementById('get-balance').innerText = addedNumber;
+  alert('Successfully your Donation');
 
 });
 // feni part
@@ -34,6 +33,7 @@ document.getElementById('feni-btn').addEventListener('click', function () {
   const addedNumber = getInput + donationNumber2;
   document.getElementById('cash-balance').innerText = decreaseNumber;
   document.getElementById('get-balance-feni').innerText = addedNumber;
+   alert('Successfully your Donation');
 });
 // quota part
 document.getElementById('quota-btn').addEventListener('click', function () {
@@ -48,6 +48,7 @@ document.getElementById('quota-btn').addEventListener('click', function () {
   const addedNumber = getInput + donationNumber3;
   document.getElementById('cash-balance').innerText = decreaseNumber;
   document.getElementById('quota-balance').innerText = addedNumber;
+   alert('Successfully your Donation');
 });
 // history
 document.getElementById('history-btn').addEventListener('click', function () {
